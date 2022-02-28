@@ -1,4 +1,4 @@
-package com.example.webapp.domain;
+package com.example.rentalspring.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -12,7 +12,7 @@ public class Users implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
-    private String id;
+    private int id;
 
     @Column
     private String name;
@@ -54,11 +54,11 @@ public class Users implements Serializable {
 
 
     //get and set
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
